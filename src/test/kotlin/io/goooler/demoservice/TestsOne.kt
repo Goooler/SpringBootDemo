@@ -14,7 +14,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders
 
 
 @SpringBootTest
-class DemoApplicationTests {
+class TestsOne {
 
     private lateinit var mvc: MockMvc
 
