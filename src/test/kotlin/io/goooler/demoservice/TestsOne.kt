@@ -16,19 +16,19 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders
 @SpringBootTest
 class TestsOne {
 
-    private lateinit var mvc: MockMvc
+  private lateinit var mvc: MockMvc
 
-    @Before
-    @Throws(Exception::class)
-    fun setUp() {
-        mvc = MockMvcBuilders.standaloneSetup(HelloController()).build()
-    }
+  @Before
+  @Throws(Exception::class)
+  fun setUp() {
+    mvc = MockMvcBuilders.standaloneSetup(HelloController()).build()
+  }
 
-    @Test
-    @Throws(java.lang.Exception::class)
-    fun getHello() {
-        mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk)
-                .andExpect(content().string(equalTo("Hello World")))
-    }
+  @Test
+  @Throws(java.lang.Exception::class)
+  fun getHello() {
+    mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON))
+      .andExpect(status().isOk)
+      .andExpect(content().string(equalTo("Hello World")))
+  }
 }

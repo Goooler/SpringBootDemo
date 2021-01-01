@@ -10,14 +10,14 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner
 @SpringBootTest
 class TestsTwo {
 
-    @Autowired
-    private lateinit var properties: Properties
+  @Autowired
+  private lateinit var properties: Properties
 
-    @Test
-    fun print() {
-        println(properties.author)
-        println(properties.randomString)
-        println(properties.randomLong)
-        println(properties.randomInt)
-    }
+  @Test
+  fun print() {
+    println(properties.author)
+    println(properties.randomString)
+    println(properties.randomLong)
+    println(properties.randomInt)
+  }
 }
