@@ -21,7 +21,9 @@ class TestsOne {
   @Before
   @Throws(Exception::class)
   fun setUp() {
-    mvc = MockMvcBuilders.standaloneSetup(HelloController()).build()
+    mvc = MockMvcBuilders
+      .standaloneSetup(HelloController())
+      .build()
   }
 
   @Test
