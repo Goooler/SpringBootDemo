@@ -127,6 +127,25 @@
           </dependency>
         </dependencies>
       </plugin>
+      <plugin>
+        <groupId>com.github.z3d1k</groupId>
+        <artifactId>ktlint-maven-plugin</artifactId>
+        <version>0.7.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>lint</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>ktlint-format</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>format</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 
